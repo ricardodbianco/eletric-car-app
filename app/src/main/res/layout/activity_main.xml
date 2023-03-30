@@ -91,6 +91,13 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_bateria" />
 
     <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular"/>
+
+    <TextView
         android:id="@+id/tv_potencia_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,9 +123,60 @@
         android:text="23 min"
         app:layout_constraintStart_toEndOf="@id/tv_recarga"
         app:layout_constraintTop_toTopOf="@+id/tv_recarga" />
+    
+    <EditText
+        android:id="@+id/et_preco_kwh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:hint="@string/preco_kwh"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recarga_value"
+        android:maxLength="10"/>
 
+    <EditText
+        android:id="@+id/et_km_percorrido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/km_percorrido"
+        android:maxLength="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_preco_kwh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido"
+        app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
+        app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
+        android:text="@string/calcular"/>
 
     <!--sp = fonte / dp = componentes visuais -->
+
+    <!--Radio Button: é o botão de ação, onde você consegue definir valores para eles,
+     de forma clicável e previsível. Ele é composto por um Radio Group.-->
+
+    <!--Checkbox: "caixas selicionáveis" onde podemos selecionar multiplas opções. -->
+
+    <!--Switch: funciona como liga/desliga (como um interruptor, por exemplo),
+     através de um valor booleano (true/false).-->
+
+    <!--Spinner: oferecem uma forma rápida de selecionar um valor de um conjunto.
+     No estado padrão, um ícone de carregamento mostra o valor selecionado naquele
+     momento. Um toque no ícone de carregamento mostra um menu suspenso com todos os
+     outros valores disponíveis. Neles, o usuário pode selecionar um novo valor.
+     Pode ser usado com "android:entries="@array/-->
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
