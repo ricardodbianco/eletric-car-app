@@ -27,7 +27,7 @@
 
 </manifest>
 
-    <!--O que é o Manifest? Basicamente, antes do sistema Android iniciar um
+    <!--&lt;!&ndash;O que é o Manifest? Basicamente, antes do sistema Android iniciar um
        componente de aplicativo (exemplo: um service, uma tela), é preciso ler o arquivo de
        manifesto (AndroidManifest.xml neste caso), todos seus componentes são declarados
        neste arquivo (é necessário estar na raiz do projeto). Aqui, também colocaremos as
@@ -36,4 +36,4 @@
        mínimo exigido pelo aplicativo, com base nas APIs que o app usa (em qual versão do
        Android você está compilando esse app). Também é possível declarar recursos de hardware e
        software usados/exigidos pelo app, declarar bibliotecas de API que o app precisa pra ser vinculado,
-       ex: fornecer como biblioteca do google maps. Mudar o ícone do app, etc.
+       ex: fornecer como biblioteca do google maps. Mudar o ícone do app, etc.-->
